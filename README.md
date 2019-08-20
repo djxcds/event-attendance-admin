@@ -16,6 +16,9 @@ https://github.com/djxcds/event-attendance-student
 <b>CyberAttendance for Students Installer</b>
 https://mega.nz/#!woZmFAwT!ZiBVN6pNj_x4xDDj1G48gRlVBF7A3PwwIGpfsgdPg28
 
+<b>CyberAttendance for Admin Installer</b>
+https://mega.nz/#!1pB2GQrJ!KEcJJN0MBwZu6dKWE5uXT9naLpozTna-Sw6NoLiOlhM
+
 <b>Usage</b>
 1. If you use the CyberAttendance Apps on one PC only, no need to change its connection string. 
 Just install and run the latest stable version of WAMP or XAMPP to run smooth and error-free, and
