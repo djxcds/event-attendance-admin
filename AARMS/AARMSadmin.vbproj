@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85D98D6C-9CE1-4399-9313-EBA82DDEA26D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AARMSadmin.My.MyApplication</StartupObject>
+    <RootNamespace>AARMSadmin</RootNamespace>
+    <AssemblyName>cyberattendance-admin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\djxcd\Desktop\SEARMSadmin\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>cyberattendance-admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>cyberattendance-admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F5FD67FF8C5951A9AECEFAFDCECEF06462EBF131</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AARMSadmin_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.7.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.7.5\Assemblies\v4.0\MySql.Data.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="connection.vb" />
+    <Compile Include="frm_about_me.Designer.vb">
+      <DependentUpon>frm_about_me.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_about_me.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_create_new_event.Designer.vb">
+      <DependentUpon>frm_create_new_event.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_create_new_event.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_attendance_log_details.Designer.vb">
+      <DependentUpon>frm_display_attendance_log_details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_attendance_log_details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_cl_summary.Designer.vb">
+      <DependentUpon>frm_display_cl_summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_cl_summary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_create_cl_summary.Designer.vb">
+      <DependentUpon>frm_create_cl_summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_create_cl_summary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_attendance_logs.Designer.vb">
+      <DependentUpon>frm_display_attendance_logs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_attendance_logs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_review.Designer.vb">
+      <DependentUpon>frm_display_review.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_review.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_stored_events.Designer.vb">
+      <DependentUpon>frm_display_stored_events.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_stored_events.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_upcoming_events.Designer.vb">
+      <DependentUpon>frm_display_upcoming_events.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_upcoming_events.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_load_sum.Designer.vb">
+      <DependentUpon>frm_display_load_sum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_load_sum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_create_attendance.Designer.vb">
+      <DependentUpon>frm_create_attendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_create_attendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_modify_cl.Designer.vb">
+      <DependentUpon>frm_modify_cl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_modify_cl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main_menu.Designer.vb">
+      <DependentUpon>frm_main_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_attendance_monitoring.Designer.vb">
+      <DependentUpon>frm_display_attendance_monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_attendance_monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_create_new_list.Designer.vb">
+      <DependentUpon>frm_create_new_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_create_new_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_create_new_student.Designer.vb">
+      <DependentUpon>frm_create_new_student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_create_new_student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_student_list.Designer.vb">
+      <DependentUpon>frm_display_student_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_student_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_student_under_list.Designer.vb">
+      <DependentUpon>frm_display_student_under_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_student_under_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_display_all_student.Designer.vb">
+      <DependentUpon>frm_display_all_student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_display_all_student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="global_functions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_about_me.resx">
+      <DependentUpon>frm_about_me.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_create_new_event.resx">
+      <DependentUpon>frm_create_new_event.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_attendance_log_details.resx">
+      <DependentUpon>frm_display_attendance_log_details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_cl_summary.resx">
+      <DependentUpon>frm_display_cl_summary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_create_cl_summary.resx">
+      <DependentUpon>frm_create_cl_summary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_attendance_logs.resx">
+      <DependentUpon>frm_display_attendance_logs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_review.resx">
+      <DependentUpon>frm_display_review.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_stored_events.resx">
+      <DependentUpon>frm_display_stored_events.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_upcoming_events.resx">
+      <DependentUpon>frm_display_upcoming_events.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_load_sum.resx">
+      <DependentUpon>frm_display_load_sum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_create_attendance.resx">
+      <DependentUpon>frm_create_attendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_modify_cl.resx">
+      <DependentUpon>frm_modify_cl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main_menu.resx">
+      <DependentUpon>frm_main_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_attendance_monitoring.resx">
+      <DependentUpon>frm_display_attendance_monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_create_new_list.resx">
+      <DependentUpon>frm_create_new_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_create_new_student.resx">
+      <DependentUpon>frm_create_new_student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_student_list.resx">
+      <DependentUpon>frm_display_student_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_student_under_list.resx">
+      <DependentUpon>frm_display_student_under_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_display_all_student.resx">
+      <DependentUpon>frm_display_all_student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AARMSadmin_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgnew2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addrule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toggle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\developer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
